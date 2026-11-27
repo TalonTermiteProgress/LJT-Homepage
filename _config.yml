@@ -48,3 +48,4 @@ defaults:
   values: {layout: talk, author_profile: true, share: true}
 plugins: [jekyll-feed, jekyll-gist, jekyll-paginate, jekyll-sitemap, jekyll-redirect-from, jemoji]
 compress_html: {clippings: all, comments: ["<!-- ", " -->"], ignore: {envs: development}}
+analytics: {provider: 'false'}
