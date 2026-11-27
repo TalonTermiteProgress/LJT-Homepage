@@ -14,9 +14,20 @@ author:
   googlescholar: "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
   github: "Vicent0205"
   twitter: "junteng88716710"
+publication_category:
+  books: {title: 'Books'}
+  manuscripts: {title: 'Journal Articles'}
+  conferences: {title: 'Conference Papers'}
 og_image: og-image.png
-include: [".htaccess", "_pages", "files"]
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
+permalink: "/:categories/:title/"
 timezone: Etc/UTC
+include: [".htaccess", "_pages", "files"]
+sass: {sass_dir: _sass, style: compressed}
 collections:
   teaching: {output: true, permalink: "/:collection/:path/"}
   publications: {output: true, permalink: "/:collection/:path/"}
@@ -36,3 +47,4 @@ defaults:
 - scope: {path: "", type: talks}
   values: {layout: talk, author_profile: true, share: true}
 plugins: [jekyll-feed, jekyll-gist, jekyll-paginate, jekyll-sitemap, jekyll-redirect-from, jemoji]
+compress_html: {clippings: all, comments: ["<!-- ", " -->"], ignore: {envs: development}}
